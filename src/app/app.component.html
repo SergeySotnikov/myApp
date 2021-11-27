@@ -1,5 +1,3 @@
-<button (click)="printItem()"><span>Click Me</span></button>
-<h1>My List Items:</h1>
-<ul>
-    <li *ngFor="let item of list">My item № {{item}} </li>
-</ul>
+<div class="container">
+    <app-child-component [currentData]="currentDay"></app-child-component>
+</div>

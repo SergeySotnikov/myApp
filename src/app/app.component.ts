@@ -7,12 +7,10 @@ import { Component } from '@angular/core';
 
 export class AppComponent {
 
-  list:number[]=[];
+  today = new Date();
+  dd = String(this.today.getDate()).padStart(2, '0');
+  mm = String(this.today.getMonth() + 1).padStart(2, '0'); //January is 0!
+  yyyy = this.today.getFullYear();
+  currentDay= this.dd + '/' + this.mm + '/' + this.yyyy;
 
-  printItem(){
-    this.list =[];
-    for(let i=1; i<=5;i++){
-      this.list.push(i);
-    }
-  }
 }  
