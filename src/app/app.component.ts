@@ -7,4 +7,22 @@ import { Component } from '@angular/core';
 
 export class AppComponent {
 
+  users = [
+    {
+    firstName: 'Sergey',
+    lastName: 'Sotnikov',
+    age: 30,
+    },
+    {
+    firstName: 'Ivan',
+    lastName: 'Petrovich',
+    age: 24,
+    },
+    {
+    firstName: 'Anton',
+    lastName: 'Ivanov',
+    age: 27,
+    }
+    ];
+    
 }  
